@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link href="Style\dist\css\bootstrap.min.css" rel="stylesheet">
+
+<link href="Style\dist\css\bootstrap.css" rel="stylesheet">
+
+<link href="css\simple-sidebar.css" rel="stylesheet">
+
+<link href="Style\dist\css\bootstrap.theme.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="Style\dist\font.css"/>
+
+
+</head>
+
+<style>
+
+body
+{
+	background-color: black;
+}
+	
+	.main
+	{
+		height: 500px;
+	}
+
+	.v, .s
+	{
+		height: 40px;
+	}
+
+	.s
+	{
+		margin-top: 55px;
+		border-radius: 5px;
+	}
+
+
+	.mailList
+	{
+		margin-top: 25px;
+	}
+
+	.show
+	{
+		background-color: black;
+		height: 25px;
+		font-size: 15px;
+		width: 200px;
+		margin-top: 20px;
+		color: white;
+		font-variant-caps: all-small-caps;
+		border-radius: 10px;
+	}
+
+
+	.t
+	{
+			height: 40px;
+	}
+
+	.sideTwo
+	{
+		background-image: url(image/10.jpg);
+		background-size: cover;
+		height: 50px;
+		margin-top: -20px;
+		width: 102%;
+		margin-left: -8px;
+	}
+
+	.mainLine
+	{
+		float: right;
+		margin-top: 5px;
+	}
+	
+	.side2
+	{
+		background-image: url(image/8.jpg);
+		background-size: cover;
+		height: 100vh;
+		width: 100%;
+	}
+
+	.form-control
+	{
+		opacity: 0.7;
+		outline: none;
+		border: none;
+	}
+
+	.sideTable
+	{
+		font-size: 14px;
+	}
+
+	th
+	{
+		padding-left: 10px;
+		text-align: center;
+	}
+	.inb
+	{
+		margin-top: 10px;
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	.mainLineDet
+	{
+		color: white;
+	}
+
+	.sideOne
+	{
+		background-image: url(image/10.jpg);
+		background-size: cover;
+		height: 794px;
+	}
+
+	.input1
+	{
+		display: inline-block;
+		margin-left: 20px;
+		width: 85%;
+	}
+
+	.input
+	{
+		border: none;
+		font-size: 18px;
+		outline: none;
+		background-color: black;
+		color: white;
+		width: 100%;
+	}
+
+	.s
+	{
+		background-color: black;
+	}
+
+
+	.list
+	{
+		height: 40px;
+		margin-bottom: 2px;
+		border-radius: 5px;
+		background-color: cyan;
+	}
+
+	.list:hover
+	{
+		background-color: white;
+	}
+
+	.ac
+	{
+		float: right;
+		margin-top: 5px;
+		margin-right: 4px;
+	}
+
+	.bol
+	{
+		background-color: cyan;
+		height: 100vh;
+	}
+
+	.btnSide, .search
+	{
+		display: inline-block;
+	}
+
+	.bol
+	{
+		width: 267px;
+		z-index: 1;
+		margin-top: -20px;
+	}
+
+	.sideList
+	{
+		margin-bottom: 20px;
+		font-size: 16px;
+		font-family: sans-serif;
+		margin-left: 10px;
+	}
+
+	.sideListu
+	{
+		margin-bottom: 20px;
+		font-size: 16px;
+		font-family: sans-serif;
+		margin-left: 4px;
+		margin-top: 10px;
+	}
+
+	a, a:hover, a:focus, a:active
+	{
+		color: black;
+		text-decoration: none;
+	}
+
+	a:hover
+	{
+		font-weight: bold;
+	}
+
+	.sideTop
+	{
+		background-image: url(image/10.jpg); 
+		height: 50px;
+		opacity: 0.8;
+		margin-bottom: 20px;
+	}
+
+	.sideList > span
+	{
+		padding-right: 10px;
+	}
+
+	.u > a
+	{
+		border-radius: 100px;
+		background-color: black;
+		color: white;
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.uSide
+	{
+		float: right;
+		padding-right: 10px;
+	}
+
+	.btn
+	{
+		background-color: black;
+	}
+
+	.sear
+	{
+		border-radius: 10px;
+		background-color: black;
+		color: white;
+		height: 35px;
+		padding: 5px;
+	}
+
+	.sideRes
+	{
+		background-color: cyan;
+		height: 100vh;
+		width: 41px;
+	}
+
+	.sideRes1
+	{
+		background-color: cyan;
+		height: 100vh;
+		width: 41px;
+		margin-right: 40px;
+		display: inline;
+	}
+
+	.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+	#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+	.show > a, a:hover, a:active, a:focus
+	{
+		color: white;
+		text-decoration: none;
+	}
+
+@media (max-width: 768px) {
+
+	.bol
+	{
+		display: none;
+		position: absolute;
+		z-index: 1;
+		margin-top: 0px;
+	}
+
+	.sideRes1
+	{
+		display: none;
+	}
+
+	.sideTwo
+	{
+			width: 105%;
+	}
+
+	.btnSide
+	{
+		display: inline-block;
+	}
+
+	.side2
+	{
+		margin-left: 36px;
+		margin-top: -2px;
+		width: 90%;
+	}
+
+		.input1
+	{
+		display: inline-block;
+		margin-left: 20px;
+		width: 70%;
+	}
+
+
+}
+@media (max-width: 770px) {
+	.side2
+	{
+		margin-left: 36px;
+		margin-top: -2px;
+		width: 96%;
+	}
+}
+
+</style>
+
+<body>
+	
+	<div class="main wrapper">
+
+       <div class="">
+
+			<div class=">
+
+				<div class="row">
+				<div class="sideRes1">
+				</div>
+
+					<div class="bol">
+						<div class="sideTop">
+						<div class="btnSide">
+				 			<button type="button" class="btn btn-primary navbar-btn sidebarCollapse">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                			</button>
+                		</div>
+                		<div class="search">
+                			<input type="search" name="search" placeholder="Search" class="sear">
+                			<span class="glyphicon glyphicon-search"></span>
+                		</div>
+                	    </div>
+
+                		<div class="sideListu">
+                			<span class="u"><a href="#">U</a></span>
+                			<span><a href="#">Umair Lakhani</a></span>
+                			<span class="uSide glyphicon glyphicon-cloud"></span>
+                			<span class="uSide glyphicon glyphicon-bell"></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list-alt"></span>
+                			 <span><a href="#">Inbox</a></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                			 <span><a href="#">Movies to Watch</a></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                			 <span><a href="#">Private</a></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                			 <span><a href="#">Family</a></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                			 <span><a href="#">Work</a></span>
+                		</div>
+					</div>
+				</div>
+			
+			</div>
+
+				<div class="sideImg">
+
+				</div>
+
+			<div class="side2" id="content">
+
+				<div class="sideRes navbar-fixed-top">
+
+							<div class="sideTop">
+
+				 			<button type="button" id="myBtn" class="btn btn-primary navbar-btn sidebarCollapse">
+                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                			</button>
+
+                			</div>
+                		
+
+                		<div class="sideListu">
+                			<span class="u"><a href="#">U</a></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list-alt"></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                		</div>
+
+                		<div class="sideList">
+                			 <span class="glyphicon glyphicon-list"></span>
+                		</div>
+
+                </div>
+
+
+				<div class="row">
+
+				<div class="col-lg-12 sideTwo">
+
+					<div class="mainLineDet">
+				
+					<div class="inb">
+						<b> Inbox </b>
+					</div>
+
+					<div class="mainLine">
+						<table class="sideTable">
+							<tr>
+								<th> <i class="glyphicon glyphicon-share"></i> </th>
+								<th> <span class="glyphicon glyphicon-sort-by-alphabet"></span></th>
+								<th> <span class="glyphicon glyphicon-equalizer"></span></th>
+							</tr>
+							<tr>
+								<th> Share </th>
+								<th> Sort </th>
+								<th> More </th>
+							</tr>
+		 				</table>		
+					</div>
+
+					</div>
+
+				</div>
+
+				</div>
+
+				<div class="col-lg-12 s form-control">
+
+					<div class="g glyphicon glyphicon-plus"></div>
+					<div class="input1"><input type="text" placeholder="Add a to-do..." class="input"> </div>
+					<div class="g glyphicon glyphicon-star ac"></div>
+					<div class="g glyphicon glyphicon-calendar ac"></div>
+
+				</div>
+
+				<div class="col-lg-12 mailList">
+
+					<div class="col-lg-12 list form-control">
+
+						<input type="checkbox" >
+						<b> Bootstrap Assignment </b>
+
+					</div>
+
+					<div class="col-lg-12 list form-control">
+
+						<input type="checkbox" >
+						<b> Mobile App Assignment </b>
+
+					</div>
+
+					<div class="col-lg-12 show">
+
+						<a href="#">Show Complete to-dos</a>
+
+					</div>	
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+<script src="Style\dist\js\bootstrap.min.js"></script>
+<script src="Style\dist\js\jquery.js"></script>
+<script src="Style\dist\js\min.js"></script>
+
+         <script>
+             $(document).ready(function () {
+    $('.sidebarCollapse').click(function(){
+        $('.bol').toggle();
+    });
+});
+
+         </script>
+
+
+
+
+
+</html>
